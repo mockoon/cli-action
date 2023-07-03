@@ -18,7 +18,7 @@ jobs:
       - name: Run Mockoon CLI
         uses: mockoon/cli-action@v1
         with:
-          version: "3.0.0"
+          version: "latest"
           port: "3000"
           data-file: "https://raw.githubusercontent.com/mockoon/mock-samples/main/samples/generate-mock-data.json"
       - name: Make test call
