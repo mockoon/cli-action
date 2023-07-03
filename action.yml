@@ -1,0 +1,25 @@
+name: "mockoon-cli"
+description: "Run Mockoon CLI as a GitHub Action"
+branding:
+  icon: "terminal"
+  color: "gray-dark"
+inputs:
+  version:
+    description: "Mockoon CLI version to pull from NPM"
+    required: true
+    default: "latest"
+  data-file:
+    description: "Mockoon CLI data file (local file or URL)"
+    required: true
+  port:
+    description: "Mockoon CLI port"
+    required: true
+    default: "3000"
+runs:
+  using: "composite"
+  steps:
+    - name: "Run Mockoon CLI"
+      shell: bash
+      run: |
+        npm install -g @mockoon/cli@${{ inputs.version }}
+        mockoon-cli start --data ${{ inputs.data-file }} --port ${{ inputs.port }}

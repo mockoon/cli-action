@@ -1,0 +1,26 @@
+name: Test
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-cli-action:
+    name: Test Mockoon CLI GitHub Action
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+      - name: Run Mockoon CLI
+        uses: mockoon/cli-action@v1
+        with:
+          version: "3.0.0"
+          port: "3000"
+          data-file: "https://raw.githubusercontent.com/mockoon/mock-samples/main/samples/generate-mock-data.json"
+      - name: Make test call
+        run: |
+          curl -f -X GET http://localhost:3000/posts
