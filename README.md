@@ -24,18 +24,29 @@ To learn more about Mockoon and Mockoon CLI, please visit the [official website]
 ## GitHub Action Usage
 
 ```yaml
-- name: Run Mockoon CLI
-  uses: mockoon/cli-action@v1
-  with:
-    # Mockoon CLI version, default to 'latest'
-    version: "latest"
-    # Mockoon local data file or URL
-    # data: https://domain.com/mockoon-data.json
-    data-file: ./mockoon-data.json
-    # port, default to 3000
-    port: 3000
-- name: Make test call
-  run: curl -X GET http://localhost:3000/endpoint
+name: Mockoon CLI demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mockoon-cli-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Mockoon CLI
+        uses: mockoon/cli-action@v1
+        with:
+          # Mockoon CLI version, default to 'latest'
+          version: "latest"
+          # Mockoon local data file or URL
+          data-file: "./mockoon-data.json"
+          # port, default to 3000
+          port: 3000
+      - name: Make test call
+        run: curl -X GET http://localhost:3000/endpoint
 ```
 
 ## Changelogs
