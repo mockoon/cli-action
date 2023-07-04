@@ -31,7 +31,7 @@ To learn more about Mockoon and Mockoon CLI, please visit the [official website]
     version: "latest"
     # Mockoon local data file or URL
     # data: https://domain.com/mockoon-data.json
-    data: ./mockoon-data.json
+    data-file: ./mockoon-data.json
     # port, default to 3000
     port: 3000
 - name: Make test call
