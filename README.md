@@ -35,7 +35,7 @@ jobs:
   mockoon-cli-demo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Run Mockoon CLI
         uses: mockoon/cli-action@v1
         with:
