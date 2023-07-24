@@ -19,7 +19,7 @@ Welcome to Mockoon official CLI's GitHub Action. Mockoon CLI is a lightweight an
 
 To learn more about Mockoon and Mockoon CLI, please visit the [official website](https://mockoon.com/).
 
-![Mockoon CLI screenshot](https://github.com/mockoon/mockoon/raw/main/packages/cli/docs/screenshot.png)
+![Mockoon CLI screenshot](https://mockoon.com/images/hero-repo.png)
 
 ## GitHub Action Usage
 
