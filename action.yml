@@ -1,8 +1,7 @@
 name: "mockoon-cli"
 description: "Run Mockoon CLI as a GitHub Action"
 branding:
-  icon: "terminal"
-  color: "gray-dark"
+  color: "white"
 inputs:
   version:
     description: "Mockoon CLI version to pull from NPM"
