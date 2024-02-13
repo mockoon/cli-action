@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run Mockoon CLI
-        uses: mockoon/cli-action@v1
+        uses: mockoon/cli-action@v2
         with:
           # Mockoon CLI version, default to 'latest'
           version: "latest"
@@ -48,6 +48,15 @@ jobs:
       - name: Make test call
         run: curl -X GET http://localhost:3000/endpoint
 ```
+
+## Mockoon version compatibility
+
+This action is compatible with the following Mockoon CLI versions:
+
+| Mockoon CLI version | Action version |
+| ------------------- | -------------- |
+| <6.0.0              | v1             |
+| >=6.0.0             | v2             |
 
 ## Changelogs
 
