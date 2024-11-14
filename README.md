@@ -1,25 +1,30 @@
 <div align="center">
   <a href="https://mockoon.com" alt="mockoon logo">
-    <img width="200" height="200" src="https://mockoon.com/images/logo-square-github-action.png">
+    <img width="200" height="200" src="https://mockoon.com/images/logo-square-app.png">
   </a>
   <br>
-  <a href="https://mockoon.com/download/"><img src="https://img.shields.io/badge/Download%20app-Go-green.svg?style=flat-square&colorB=1997c6"/></a>
   <a href="https://mockoon.com/"><img src="https://img.shields.io/badge/Website-Go-green.svg?style=flat-square&colorB=1997c6"/></a>
-  <a href="http://eepurl.com/dskB2X"><img src="https://img.shields.io/badge/Newsletter-Subscribe-green.svg?style=flat-square"/></a>
+  <a href="https://mockoon.com/newsletter/"><img src="https://img.shields.io/badge/Newsletter-Subscribe-green.svg?style=flat-square"/></a>
   <a href="https://twitter.com/GetMockoon"><img src="https://img.shields.io/badge/Twitter_@GetMockoon-follow-blue.svg?style=flat-square&colorB=1da1f2"/></a>
-  <a href="https://discord.gg/FtJjkejKGp"><img src="https://img.shields.io/badge/Discord-go-blue.svg?style=flat-square&colorA=6c84d9&colorB=1da1f2"/></a>
-  <br>
-  <a href="https://www.npmjs.com/package/@mockoon/cli"><img src="https://img.shields.io/npm/v/@mockoon/cli.svg?style=flat-square&colorB=cb3837&label=CLI (npm)"/></a>
+  <a href="https://mockoon.com/discord/"><img src="https://img.shields.io/badge/Discord-go-blue.svg?style=flat-square&colorA=6c84d9&colorB=1da1f2"/></a>  
   <br>
   <br>
   <h1>@Mockoon/cli GitHub Action</h1>
 </div>
 
-Welcome to Mockoon official CLI's GitHub Action. Mockoon CLI is a lightweight and fast NPM package to deploy your mock APIs anywhere.
+Mockoon is the easiest and quickest way to design and run mock APIs. No remote deployment, no account required, free and open-source.
 
-To learn more about Mockoon and Mockoon CLI, please visit the [official website](https://mockoon.com/).
+It combines a [desktop application](https://mockoon.com/download/) to design and run mock servers locally, and a [CLI](https://mockoon.com/cli/) to self-host your fake APIs. A [cloud](#subscribe-to-mockoon-cloud) is also available to collaborate with your team, keep your data in sync, and deploy your mock APIs.
 
-![Mockoon CLI screenshot](https://mockoon.com/images/hero-repo.png)
+API mocking helps you speed up development and third-party API integration by reducing dependency on external services and their limitations: rate limits, costs, availability, etc.
+It also allows you to test your applications in a controlled environment with predictable responses, status codes, and latencies, and easily simulate edge cases and error scenarios.
+Finally, you can onboard new team members faster by providing them with a consistent and reliable environment to test and develop their applications.
+
+➡️ [Download](https://mockoon.com/download/)
+
+<div align="center">
+  <img width="50%" src="https://mockoon.com/images/hero-repo.png">
+</div>
 
 ## GitHub Action Usage
 
@@ -58,39 +63,33 @@ This action is compatible with the following Mockoon CLI versions:
 | <6.0.0              | v1             |
 | >=6.0.0             | v2             |
 
-## Changelogs
+## Subscribe to Mockoon Cloud
 
-You will find Mockoon applications [changelogs](https://mockoon.com/releases/) on the official website.
+With advanced features for solo developers and teams, Mockoon Cloud supercharges your API development:
 
-## Mockoon's documentation
-
-You will find Mockoon's [documentation](https://mockoon.com/docs/latest) on the official website. It covers the most complex features.
-
-## Sponsors
-
-Mockoon is an open-source project built by volunteer maintainers. If you like our application, please consider sponsoring us and join all the [Sponsors and Backers](https://github.com/mockoon/mockoon/blob/main/backers.md) who helped this project over time!
-
-<div align="center">
-<a href="https://github.com/sponsors/mockoon"><img src="https://mockoon.com/images/sponsor-btn.png" width="250" alt="sponsor button" /></a>
-</div>
-
-## Subscribe to Mockoon Pro
-
-With advanced features for solo developers and teams, Mockoon Pro supercharges your API development:
-
+- ☁️ [cloud deployments](https://mockoon.com/docs/latest/mockoon-cloud/api-mock-cloud-deployments/)
+- 🔄️ [data synchronization and real-time collaboration](https://mockoon.com/docs/latest/mockoon-cloud/data-synchronization-team-collaboration/)
 - 🤖 [AI powered API mocking](https://mockoon.com/ai-powered-api-mocking/)
-- 📃 Access to dozens of [ready to use JSON templates](https://mockoon.com/templates/).
+- 📃 Access to dozens of [ready-to-use JSON templates](https://mockoon.com/templates/).
 - 💬 Priority support and training.
 
 Upgrade today and take your API development to the next level.
 
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<a href="https://mockoon.com/pro/"><img src="https://mockoon.com/images/pro-btn.png?" width="250" alt="pro button" /></a>
+<a href="https://mockoon.com/cloud/"><img src="https://mockoon.com/images/cloud-btn.png?" width="250" alt="cloud button" /></a>
 </div>
+
+## Mockoon's documentation
+
+You will find Mockoon's [documentation](https://mockoon.com/docs/latest/about/) on the official website. It covers Mockoon's most complex features. Feel free to contribute or ask for new topics to be covered.
+
+## Changelogs
+
+You will find Mockoon applications [changelogs](https://mockoon.com/releases/) on the official website.
 
 ## Support/feedback
 
-You can discuss all things related to Mockoon's CLI, and ask for help, on the [official community](https://github.com/mockoon/mockoon/discussions). It's also a good place to discuss bugs and feature requests before opening an issue on this repository. For more chat-like discussions, you can also join our [Discord server](https://discord.gg/FtJjkejKGp).
+You can discuss all things related to Mockoon and ask for help on the [official community](https://github.com/mockoon/mockoon/discussions). It's also a good place to discuss bugs and feature requests before opening an issue on this repository. For more chat-like discussions, you can also join our [Discord server](https://discord.gg/FtJjkejKGp).
 
 ## Contributing
 
@@ -102,4 +101,4 @@ Please also take a look at our [Code of Conduct](https://github.com/mockoon/mock
 
 If you want to know what will be coming in the next release you can check the global [Roadmap](https://mockoon.com/public-roadmap/).
 
-New releases will be announced on Mockoon's [Twitter account @GetMockoon](https://twitter.com/GetMockoon) and through the newsletter to which you can subscribe [here](http://eepurl.com/dskB2X).
+New releases will be announced on Mockoon's [Twitter account @GetMockoon](https://twitter.com/GetMockoon) and through the newsletter to which you can subscribe [here](https://mockoon.com/newsletter/).
