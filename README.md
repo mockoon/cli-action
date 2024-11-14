@@ -28,6 +28,16 @@ Finally, you can onboard new team members faster by providing them with a consis
 
 ## GitHub Action Usage
 
+Mockoon CLI, being a JavaScript application, can run on any environment where Node.js is installed, including continuous integration systems like GitHub Actions.
+
+This GitHub Action allows you to run Mockoon CLI in your workflows.
+
+Several parameters are available to customize the behavior of the action:
+
+- The `version` of the CLI, default to `latest`.
+- The `data-file`, pointing to a [Mockoon data file](https://mockoon.com/docs/latest/mockoon-data-files/data-storage-location/) stored in the repository.
+- A `port` on which the mock server will run, default to `3000`.
+
 ```yaml
 name: Mockoon CLI demo
 
@@ -62,6 +72,10 @@ This action is compatible with the following Mockoon CLI versions:
 | ------------------- | -------------- |
 | <6.0.0              | v1             |
 | >=6.0.0             | v2             |
+
+## CLI's documentation
+
+Mockoon CLI is available as an [NPM package](https://www.npmjs.com/package/@mockoon/cli). Please check our [dedicated documentation](https://github.com/mockoon/mockoon/blob/main/packages/cli/README.md) to learn how to install and use it.
 
 ## Subscribe to Mockoon Cloud
 
