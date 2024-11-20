@@ -35,7 +35,7 @@ This GitHub Action allows you to run Mockoon CLI in your workflows.
 Several parameters are available to customize the behavior of the action:
 
 - The `version` of the CLI, default to `latest`.
-- The `data-file`, pointing to a [Mockoon data file](https://mockoon.com/docs/latest/mockoon-data-files/data-storage-location/) stored in the repository.
+- The `data-file`, pointing to a [Mockoon data file](https://mockoon.com/docs/latest/mockoon-data-files/data-files-location/) stored in the repository.
 - A `port` on which the mock server will run, default to `3000`.
 
 ```yaml
