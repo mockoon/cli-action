@@ -10,17 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
         with:
-          node-version: 20
+          node-version: 24
       - name: Run Mockoon CLI
-        uses: mockoon/cli-action@v2
+        uses: mockoon/cli-action@v3
         with:
           version: "latest"
-          port: "3000"
-          data-file: "https://raw.githubusercontent.com/mockoon/mock-samples/main/samples/generate-mock-data.json"
+          port: "3001 3002"
+          data-file: "https://raw.githubusercontent.com/mockoon/mock-samples/main/samples/generate-mock-data.json https://raw.githubusercontent.com/mockoon/mock-samples/main/samples/generate-mock-data.json"
+          extra-args: "--faker-locale en_GB"
       - name: Make test call
         run: |
-          curl -f -X GET http://localhost:3000/posts
+          curl -f -X GET http://localhost:3001/posts
+          curl -f -X GET http://localhost:3002/posts

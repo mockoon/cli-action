@@ -8,12 +8,15 @@ inputs:
     required: true
     default: "latest"
   data-file:
-    description: "Mockoon CLI data file (local file or URL)"
+    description: "Mockoon CLI data file (local file or URL, can be multiple, space separated, e.g., 'file1.json file2.json')"
     required: true
   port:
-    description: "Mockoon CLI port"
+    description: "Mockoon CLI port (can be multiple, space separated, e.g., '3000 4000')"
     required: true
     default: "3000"
+  extra-args:
+    description: "Extra arguments to pass to Mockoon CLI (e.g., '--faker-locale en_GB --disable-routes users --env-vars-prefix MY_PREFIX_')"
+    required: false
 runs:
   using: "composite"
   steps:
@@ -22,4 +25,4 @@ runs:
       # use & to run in background for >4.0.0
       run: |
         npm install -g @mockoon/cli@${{ inputs.version }}
-        mockoon-cli start --data ${{ inputs.data-file }} --port ${{ inputs.port }} &
+        mockoon-cli start --data ${{ inputs.data-file }} --port ${{ inputs.port }} ${{ inputs.extra-args }} &

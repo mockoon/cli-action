@@ -33,8 +33,9 @@ This GitHub Action allows you to run Mockoon CLI in your workflows.
 Several parameters are available to customize the behavior of the action:
 
 - The `version` of the CLI, default to `latest`.
-- The `data-file`, pointing to a [Mockoon data file](https://mockoon.com/docs/latest/mockoon-data-files/data-files-location/) stored in the repository.
-- A `port` on which the mock server will run, default to `3000`.
+- The `data-file`, pointing to one or more [Mockoon data file](https://mockoon.com/docs/latest/mockoon-data-files/data-files-location/) stored in the repository (or URLs), space separated: e.g., `file1.json file2.json`.
+- One or more `port` on which the mock server(s) will run, default to `3000`: e.g., `3000 4000`.
+- Additional `extra-args` to pass to Mockoon CLI: e.g., `--faker-locale en_GB --disable-routes users --env-vars-prefix MY_PREFIX_`.
 
 ```yaml
 name: Mockoon CLI demo
@@ -48,9 +49,9 @@ jobs:
   mockoon-cli-demo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Run Mockoon CLI
-        uses: mockoon/cli-action@v2
+        uses: mockoon/cli-action@v3
         with:
           # Mockoon CLI version, default to 'latest'
           version: "latest"
@@ -58,6 +59,8 @@ jobs:
           data-file: "./mockoon-data.json"
           # port, default to 3000
           port: 3000
+          # extra arguments to pass to Mockoon CLI
+          extra-args: "--faker-locale en_GB"
       - name: Make test call
         run: curl -X GET http://localhost:3000/endpoint
 ```
@@ -69,7 +72,7 @@ This action is compatible with the following Mockoon CLI versions:
 | Mockoon CLI version | Action version |
 | ------------------- | -------------- |
 | <6.0.0              | v1             |
-| >=6.0.0             | v2             |
+| >=6.0.0             | >=v2           |
 
 ## CLI's documentation
 
