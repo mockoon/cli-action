@@ -78,20 +78,21 @@ This action is compatible with the following Mockoon CLI versions:
 
 Mockoon CLI is available as an [NPM package](https://www.npmjs.com/package/@mockoon/cli). Please check our [dedicated documentation](https://github.com/mockoon/mockoon/blob/main/packages/cli/README.md) to learn how to install and use it.
 
-## Subscribe to Mockoon Cloud
+## Discover Mockoon Pro
 
-With advanced features for solo developers and teams, Mockoon Cloud supercharges your API development:
+Mockoon Pro is a private, self-hosted platform for teams that need to keep their API mocking workflows and data under their control:
 
-- ☁️ [cloud deployments](https://mockoon.com/docs/latest/mockoon-cloud/api-mock-cloud-deployments/)
-- 🔄️ [data synchronization and real-time collaboration](https://mockoon.com/docs/latest/mockoon-cloud/data-synchronization-team-collaboration/)
-- 🤖 [AI powered API mocking](https://mockoon.com/ai-powered-api-mocking/)
-- 📃 Access to dozens of [ready-to-use JSON templates](https://mockoon.com/templates/).
-- 💬 Priority support and training.
+- [Deploy on-premises, in a private cloud, or on an isolated network](https://mockoon.com/pro/docs/self-hosting/installation/)
+- [Synchronize data and collaborate in real time](https://mockoon.com/pro/docs/features/data-synchronization-team-collaboration/)
+- [Deploy and manage mock API instances](https://mockoon.com/pro/docs/features/api-mock-deployments/)
+- [Use the embedded web application](https://mockoon.com/pro/docs/clients/embedded-web-application/)
+- [Manage users with local authentication or OIDC SSO](https://mockoon.com/pro/docs/misc/authentication/)
+- [Review administrative and workspace events in the audit trail](https://mockoon.com/pro/docs/misc/audit-trail/)
 
-Upgrade today and take your API development to the next level.
+Start a free trial or learn more about [Mockoon Pro](https://mockoon.com/pro/).
 
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<a href="https://mockoon.com/cloud/"><img src="https://mockoon.com/images/cloud-btn.png?" width="250" alt="cloud button" /></a>
+<a href="https://mockoon.com/pro/"><img src="https://mockoon.com/images/pro-btn.png" width="250" alt="pro button" /></a>
 </div>
 
 ## Mockoon's documentation
